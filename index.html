@@ -1,0 +1,144 @@
+<!DOCTYPE html> <html lang="sv"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta name="description" content="Björke SK Dragkamp – gemenskap, styrka och dragkamp."> <title>Björke SK Dragkamp</title> <style> :root { --red: #c4161c; --dark: #111111; --gray: #f4f4f4; --white: #ffffff; } * { margin: 0; padding: 0; box-sizing: border-box; } html { scroll-behavior: smooth; } body { font-family: Arial, Helvetica, sans-serif; color: var(--dark); background: var(--white); line-height: 1.6; } /* NAVIGATION */ nav { position: fixed; top: 0; width: 100%; z-index: 1000; background: rgba(17, 17, 17, 0.95); backdrop-filter: blur(8px); } .nav-container { max-width: 1100px; margin: auto; display: flex; align-items: center; justify-content: space-between; padding: 15px 20px; } .logo { color: white; text-decoration: none; font-size: 1.25rem; font-weight: 800; letter-spacing: 1px; } .logo span { color: var(--red); } nav ul { list-style: none; display: flex; gap: 25px; } nav a { color: white; text-decoration: none; font-weight: bold; transition: color 0.2s; } nav a:hover { color: #ff4a4f; } /* HERO */ .hero { min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; color: white; padding: 100px 20px 60px; background: linear-gradient(rgba(0,0,0,.72), rgba(0,0,0,.72)), linear-gradient(135deg, #1b1b1b, #700b0f); } .hero-content { max-width: 850px; } .hero h1 { font-size: clamp(3rem, 9vw, 6.5rem); line-height: 0.95; text-transform: uppercase; font-weight: 900; letter-spacing: -3px; } .hero h1 span { color: var(--red); } .hero p { margin: 25px auto; max-width: 650px; font-size: 1.25rem; color: #eeeeee; } .buttons { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-top: 30px; } .btn { display: inline-block; padding: 14px 28px; border-radius: 6px; text-decoration: none; font-weight: bold; transition: transform .2s, background .2s; } .btn:hover { transform: translateY(-3px); } .btn-primary { color: white; background: var(--red); } .btn-primary:hover { background: #a90f15; } .btn-secondary { color: white; border: 2px solid white; } .btn-secondary:hover { background: white; color: var(--dark); } /* SECTIONS */ section { padding: 90px 20px; } .container { max-width: 1100px; margin: auto; } .section-title { text-align: center; margin-bottom: 50px; } .section-title h2 { font-size: 2.5rem; margin-bottom: 10px; } .section-title p { color: #666; } /* ABOUT */ .about { background: var(--gray); } .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; } .about h2 { font-size: 2.5rem; margin-bottom: 20px; } .about p { color: #444; margin-bottom: 15px; } .strength-box { background: var(--dark); color: white; padding: 40px; border-radius: 12px; text-align: center; box-shadow: 0 15px 40px rgba(0,0,0,.15); } .strength-box .number { font-size: 5rem; font-weight: 900; color: var(--red); line-height: 1; } .strength-box h3 { font-size: 1.6rem; margin: 15px 0; } /* CARDS */ .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; } .card { background: white; padding: 30px; border-radius: 10px; border: 1px solid #e5e5e5; box-shadow: 0 8px 25px rgba(0,0,0,.06); transition: transform .2s; } .card:hover { transform: translateY(-5px); } .card-icon { font-size: 2.5rem; margin-bottom: 15px; } .card h3 { margin-bottom: 10px; font-size: 1.4rem; } .card p { color: #666; } /* TRAINING */ .training { background: var(--gray); } .training-box { background: var(--dark); color: white; border-radius: 12px; padding: 45px; text-align: center; } .training-box h3 { color: white; font-size: 2rem; margin-bottom: 15px; } .training-box p { color: #ccc; margin-bottom: 25px; } /* CONTACT */ .contact { text-align: center; } .contact-info { display: flex; justify-content: center; gap: 50px; flex-wrap: wrap; margin-top: 30px; } .contact-item strong { display: block; font-size: 1.1rem; margin-bottom: 5px; } .contact-item span { color: #666; } /* FOOTER */ footer { background: #0b0b0b; color: #aaa; text-align: center; padding: 30px 20px; } footer strong { color: white; } /* MOBILE */ @media (max-width: 750px) { .nav-container { justify-content: center; } nav ul { display: none; } .about-grid, .cards { grid-template-columns: 1fr; } .hero h1 { letter-spacing: -2px; } section { padding: 65px 20px; } .strength-box { padding: 30px 20px; } } </style> </head> <body> <!-- NAVIGATION --> <nav> <div class="nav-container"> <a href="#" class="logo">BJÖRKE <span>SK</span></a>
+  <ul>
+    <li><a href="#om">Om oss</a></li>
+    <li><a href="#dragkamp">Dragkamp</a></li>
+    <li><a href="#traning">Träning</a></li>
+    <li><a href="#kontakt">Kontakt</a></li>
+  </ul>
+</div>
+
+</nav> <!-- HERO --> <header class="hero"> <div class="hero-content"> <h1>Björke <span>SK</span></h1>
+  <p>
+    Dragkamp med styrka, gemenskap och kämpaglöd.
+    Välkommen till Björke SK!
+  </p>
+
+  <div class="buttons">
+    <a href="#om" class="btn btn-primary">Lär känna klubben</a>
+    <a href="#kontakt" class="btn btn-secondary">Kontakta oss</a>
+  </div>
+</div>
+
+</header> <!-- ABOUT --> <section id="om" class="about"> <div class="container">
+  <div class="about-grid">
+
+    <div>
+      <h2>Om Björke SK</h2>
+
+      <p>
+        Björke SK är en förening där gemenskap, träning och
+        tävlingsglädje står i centrum.
+      </p>
+
+      <p>
+        Här samlas människor som gillar dragkamp och vill utvecklas
+        tillsammans – oavsett om målet är motion, gemenskap eller
+        tävling.
+      </p>
+
+      <p>
+        Hos oss är alla välkomna att prova på sporten!
+      </p>
+    </div>
+
+    <div class="strength-box">
+      <div class="number">💪</div>
+      <h3>Styrka tillsammans</h3>
+      <p>
+        Dragkamp handlar inte bara om råstyrka.
+        Det handlar om teknik, timing, lagarbete och vilja.
+      </p>
+    </div>
+
+  </div>
+
+</div>
+
+</section> <!-- DRAGKAMP --> <section id="dragkamp"> <div class="container">
+  <div class="section-title">
+    <h2>Dragkamp</h2>
+    <p>Mer än bara att dra i ett rep.</p>
+  </div>
+
+  <div class="cards">
+
+    <div class="card">
+      <div class="card-icon">💪</div>
+      <h3>Styrka</h3>
+      <p>
+        Bygg upp styrka och uthållighet genom varierad träning
+        anpassad för dragkamp.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">🤝</div>
+      <h3>Laganda</h3>
+      <p>
+        Alla i laget måste arbeta tillsammans. Kommunikation och
+        samarbete är nyckeln.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">🏆</div>
+      <h3>Tävling</h3>
+      <p>
+        För den som vill tävla finns möjligheter att mäta sina
+        krafter mot andra lag.
+      </p>
+    </div>
+
+  </div>
+
+</div>
+
+</section> <!-- TRAINING --> <section id="traning" class="training"> <div class="container">
+  <div class="section-title">
+    <h2>Träning</h2>
+    <p>Kom och prova på dragkamp!</p>
+  </div>
+
+  <div class="training-box">
+    <h3>Vill du testa?</h3>
+
+    <p>
+      Ta kontakt med oss för information om aktuella träningstider,
+      plats och hur du kan komma igång.
+    </p>
+
+    <a href="#kontakt" class="btn btn-primary">
+      Kontakta klubben
+    </a>
+  </div>
+
+</div>
+
+</section> <!-- CONTACT --> <section id="kontakt" class="contact"> <div class="container">
+  <div class="section-title">
+    <h2>Kontakt</h2>
+    <p>Vill du veta mer om Björke SK?</p>
+  </div>
+
+  <div class="contact-info">
+
+    <div class="contact-item">
+      <strong>📧 E-post</strong>
+      <span>info@bjorkesk.se</span>
+    </div>
+
+    <div class="contact-item">
+      <strong>📱 Telefon</strong>
+      <span>Fyll i telefonnummer</span>
+    </div>
+
+    <div class="contact-item">
+      <strong>📍 Plats</strong>
+      <span>Björke</span>
+    </div>
+
+  </div>
+
+</div>
+
+</section> <!-- FOOTER --> <footer> <p> © <span id="year"></span> <strong>Björke SK Dragkamp</strong>. Alla rättigheter förbehållna. </p> </footer> <script> document.getElementById("year").textContent = new Date().getFullYear(); </script> </body> </html>
